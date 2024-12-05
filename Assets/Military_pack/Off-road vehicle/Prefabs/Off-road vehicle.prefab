@@ -267,7 +267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1001193569694260153
 Transform:
   m_ObjectHideFlags: 0
@@ -278,7 +278,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 2.89, z: 0.68}
-  m_LocalScale: {x: 1.58, y: 0.16, z: 0.28}
+  m_LocalScale: {x: 1.5, y: 0.16, z: 0.28}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574856985513561399}
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 6330348478146648542}
   - component: {fileID: 2766876489382480583}
   - component: {fileID: -7614513439732251550}
-  - component: {fileID: -7286087542066997029}
+  - component: {fileID: 7568939784409571506}
   m_Layer: 8
   m_Name: Off-road vehicle
   m_TagString: Player
@@ -767,19 +767,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 50
   bullet: {fileID: 1867665405718171528, guid: cbe64c1e6af98334da7e84051ad9e178, type: 3}
---- !u!114 &-7286087542066997029
-MonoBehaviour:
+--- !u!54 &7568939784409571506
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7085460630238156685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e33b779625ddd6343a8cb962868f9c7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7846259950683624633
 GameObject:
   m_ObjectHideFlags: 0

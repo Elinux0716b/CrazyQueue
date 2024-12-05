@@ -36,8 +36,14 @@ public class SelectController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             foreach(var elements in players)
-                elements.transform.GetChild(0).gameObject.SetActive(false);
+                if(elements!=null)
+                {
+                    elements.transform.GetChild(0).gameObject.SetActive(false);
+                }
+                
+
             players.Clear();
+
             Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
             
             if (Physics.Raycast(ray, out _hit, 1000f, layer ))
